@@ -118,4 +118,8 @@ class auth_plugin_authenvvars extends DokuWiki_Auth_Plugin {
     /* error_log( $this->userinfo['name'].': '.json_encode($grouparr) ); */
     return $grouparr;
   }
+  
+  public function getUserData($user, $requireGroups = true){
+    return true;
+  }
 }
